@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Nanum Pen Script', cursive;
+}
+body{
+    background-color: rgb(152, 235, 179);
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+p{
+    font-size: 3.5rem;
+}
+span{
+    font-size: 3.5rem;
+}
+.options{
+    display: grid;
+    align-items: center;
+}
+.userElection, .pcElection, .result{
+    background-color: rgb(245, 252, 248);
+}
