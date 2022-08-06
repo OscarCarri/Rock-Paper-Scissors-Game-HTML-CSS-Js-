@@ -15,6 +15,8 @@ h1{
 }
 h2{
     font-size: 3rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 h1, h2{
     font-family: 'Roboto', sans-serif;
@@ -28,9 +30,21 @@ span{
     font-size: 3.5rem;
 }
 .options{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.match{
     display: grid;
-    align-items: center;
+    grid-template-columns: 1;
 }
 .userElection, .pcElection, .result{
     background-color: rgb(245, 252, 248);
+}
+button{
+    background-color: rgb(252, 251, 198);
+    font-size: 3rem;
+    width: 20rem;
+    display: inline;
 }
