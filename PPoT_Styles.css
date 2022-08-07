@@ -1,3 +1,10 @@
+:root{
+    --background-color: rgb(152, 235, 179);
+    --button-color: rgb(252, 251, 198);
+    --match-color: rgb(245, 252, 248);
+    --main-font: 'Roboto', sans-serif;
+    --alt-font: 'Ubuntu', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +12,10 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--alt-font);
 }
 body{
-    background-color: rgb(152, 235, 179);
+    background-color: var(--background-color);
 }
 h1{
     font-size: 4.6rem;
@@ -19,7 +26,7 @@ h2{
     margin-bottom: 1.2rem;
 }
 h1, h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-weight: 900;
     text-align: center;
 }
@@ -29,12 +36,11 @@ p{
 span{
     font-size: 3.6rem;
 }
-.options{
+.wrapper{
     display:grid;
-    grid-template-rows: 3;
+    grid-template-rows: 10;
     grid-template-columns: 1;
     grid-gap: .8rem;
-    margin-bottom: 2rem;
     place-items: center;
 }
 .item-1{
@@ -48,53 +54,42 @@ span{
     grid-row: 3;
     grid-column: 1;
 }
-.match{
-    display: grid;
-    grid-template-rows: 3;
-    grid-template-columns: 1;
-    grid-gap: .8rem;
-}
-.userElection, .pcElection, .result{
-    background-color: rgb(245, 252, 248);
-}
 button{
-    background-color: rgb(252, 251, 198);
+    background-color: var(--button-color);
     font-size: 4rem;
     width: 20rem;
     display: inline;
 }
 .userElection{
-    grid-row: 2;
+    grid-row: 5;
     grid-column: 1;
     box-sizing: border-box;
+    background-color: var(--match-color);
 }
 .pcElection{
-    grid-row: 3;
+    grid-row: 6;
     grid-column: 1;
     box-sizing: border-box;
+    background-color: var(--match-color);
 }
 .result{
-    grid-row: 1;
+    grid-row: 4;
     grid-column: 1;
     box-sizing: border-box;
-}
-.scoreCard{
-    display: grid;
-    grid-template-rows: 4;
-    grid-template-columns: 1;
+    background-color: var(--match-color);
 }
 .score-1{
-    grid-row: 1;
+    grid-row: 7;
     grid-column: 1;
 }.score-2{
-    grid-row: 2;
+    grid-row: 8;
     grid-column: 1;
 }
 .score-3{
-    grid-row: 3;
+    grid-row: 9;
     grid-column: 1;
 }
 .score-4{
-    grid-row: 4;
+    grid-row: 10;
     grid-column: 1;
 }
